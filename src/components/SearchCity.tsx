@@ -78,7 +78,7 @@ function SearchCity() {
     if (query.length > 2) {
       try {
         const response = await axios.get<{ items: suggestionProps[] }>(
-          "https://arise-weather-api.vercel.app/api/search-location",
+          "https://ariseweatherapi.vercel.app/api/search-location",
           {
             params: { q: query },
           }

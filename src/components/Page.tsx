@@ -93,7 +93,7 @@ function Page() {
       try {
         setIsLoading(true);
         const initialLoc = await axios.get<{ city: string }>(
-          "https://arise-weather-api.vercel.app/api/get-initial-location"
+          "https://ariseweatherapi.vercel.app/api/get-initial-location"
         );
         const initialCity = initialLoc.data.city;
 

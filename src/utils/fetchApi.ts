@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getLocation = async (city: string) => {
   try {
-    const response = await axios.get("https://arise-weather-api.vercel.app/api/get-location", {
+    const response = await axios.get("https://ariseweatherapi.vercel.app/api/get-location", {
       params: {
         q: city,
       },
@@ -19,7 +19,7 @@ export const getLocation = async (city: string) => {
 
 export const getWeather = async (lat: number, lon:number) => {
     try {
-      const response = await axios.get("https://arise-weather-api.vercel.app/api/get-weather", {
+      const response = await axios.get("https://ariseweatherapi.vercel.app/api/get-weather", {
         params: {
           lat: lat,
           lon: lon,
@@ -37,7 +37,7 @@ export const getWeather = async (lat: number, lon:number) => {
 
   export const getYesterdayWeather = async (lat: number, lon: number, dt: number) => {
     try {
-      const response = await axios.get("https://arise-weather-api.vercel.app/api/get-yesterday-weather", {
+      const response = await axios.get("https://ariseweatherapi.vercel.app/api/get-yesterday-weather", {
         params: {
           lat: lat,
           lon: lon,
