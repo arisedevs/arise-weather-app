@@ -4,7 +4,6 @@ import Humidity from "./Humidity";
 import Visibility from "./Visibility";
 import DewPoint from "./DewPoint";
 import Forecast from "./Forecast";
-import Footer from "./Footer";
 import UvIndex from "./UvIndex";
 import { useEffect, useState } from "react";
 import { useLocationContext } from "../context/LocationContext";
